@@ -1,0 +1,10 @@
+Available LAP solvers ['scipy']
+Default LAP solver 'scipy'
+Loading files.
+Preprocess take 3.638 seconds and remove 0 boxes.
+NumExpr defaulting to 8 threads.
+adding frames: 21.587 seconds.
+Running metrics
+    IDF1    IDP    IDR   Rcll   Prcn GT MT PT ML FP FN IDs  FM   MOTA  MOTP IDt IDa IDm
+0 100.0% 100.0% 100.0% 100.0% 100.0% 23 23  0  0  0  0   0   0 100.0% 0.000   0   0   0
+Completed
