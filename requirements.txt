@@ -1,0 +1,7 @@
+argparse
+configparser
+logging
+tqdm
+numpy
+pandas
+motmetrics
