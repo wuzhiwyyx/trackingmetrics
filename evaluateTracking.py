@@ -18,8 +18,9 @@ def parse_args():
     return parser.parse_args()
 
 
-def prepare_dataframe(path):
+def prepare_dataframe(path, frames):
     df = pd.read_csv(path)
+    df = df[df['frame_id'] < frames]
     df = df[['frame_id', 'track_id', 'x_camera', 'y_camera', 'box_w', 'box_h']]
     rename_dict = {'frame_id': 'FrameId', 'track_id': 'Id',
                    'x_camera': 'X', 'y_camera': 'Y',
@@ -56,8 +57,8 @@ def main():
     logging.info('Default LAP solver \'%s\'', mm.lap.default_solver)
     logging.info('Loading files.')
 
-    gt = prepare_dataframe(params['gt_path'])
-    ts = prepare_dataframe(params['predictions_path'])
+    gt = prepare_dataframe(params['gt_path'], int(params['seqLength']))
+    ts = prepare_dataframe(params['predictions_path'], int(params['seqLength']))
 
     mh = mm.metrics.create()
     st = time.time()
