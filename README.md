@@ -3,10 +3,10 @@
 Thanks [cheind/py-motmetrics](https://github.com/cheind/py-motmetrics) for their great job. This repository provides benchmark multiple object trackers (MOT) in Python on specified data format.
 
 ## Installation
-1. Install requirements:  
-`pip install -r requirements.txt`
-2. Clone this repo:  
+1. Clone this repo:  
 `git clone https://github.com/noble-born/TrackingMetrics.git`
+2. Install requirements:  
+`pip install -r requirements.txt`
 
 ## Input data
 Assume you have two `.csv` files, which contains *ground_truth* and *predictions* of tracking objects on a *sequence of frames*.
