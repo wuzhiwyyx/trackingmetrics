@@ -9,7 +9,7 @@ Thanks [cheind/py-motmetrics](https://github.com/cheind/py-motmetrics) for their
 `git clone https://github.com/noble-born/TrackingMetrics.git`
 
 ## Input data
-Assume you have two `.csv` files, which contains *ground_truth* and *predictions* of tracking objects on *sequence of frames*.
+Assume you have two `.csv` files, which contains *ground_truth* and *predictions* of tracking objects on a *sequence of frames*.
 
 Each `.csv` file expected to have at least `['frame_id', 'track_id', 'x_camera', 'y_camera', 'box_w', 'box_h']` columns. Each row corresponds one object of the frame.
 

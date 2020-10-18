@@ -4,4 +4,4 @@ logging
 tqdm
 numpy
 pandas
-motmetrics
+motmetrics==1.2.0

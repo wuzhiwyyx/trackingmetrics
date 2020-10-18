@@ -43,6 +43,8 @@ def main():
     seqIni = ConfigParser()
     seqIni.read(args.inifile, encoding='utf8')
     params = seqIni['Sequence']
+    
+    os.makedirs(params['log_dir'], exist_ok=True)
     logging.basicConfig(level=logging.INFO, format='%(message)s', datefmt='%I:%M:%S',
             handlers=[logging.FileHandler(os.path.join(params['log_dir'], time.ctime()+'.log'), 'w', 'utf-8'),
                       logging.StreamHandler()])
