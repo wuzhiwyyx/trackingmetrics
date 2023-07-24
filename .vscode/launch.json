@@ -1,0 +1,57 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "DISPLAY" : "localhost:11.0"
+            },
+        },
+        {
+            "name": "pkl2csv",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pkl2csv.py",
+            "args" : ["/home/virgil/Documents/RFDet/pred.pkl",
+                        "--out", "sp.csv", "--vis"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "DISPLAY" : "localhost:10.0"
+            },
+        },
+        {
+            "name": "dataset2csv",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/dataset2csv.py",
+            "args" : ["/mnt/hdd/hiber2_cocovid/hiber2_cocovid_15/annotations/instances_default.json",
+                        "--out", "hiber2_15.csv"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "DISPLAY" : "localhost:10.0"
+            },
+        },
+        {
+            "name": "evalTrack",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/evaluateTracking.py",
+            "args" : ["hiber2_sequence.ini"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "DISPLAY" : "localhost:10.0"
+            },
+        }
+    ]
+}

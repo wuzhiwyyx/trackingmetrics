@@ -1,0 +1,6 @@
+*.csv
+detr
+faster_rcnn
+sp
+yolov3
+*.pyc
